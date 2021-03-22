@@ -1,0 +1,209 @@
+.AdminHeader{
+  border: 2px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #357edb;
+    height: 3rem;
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 5px;
+    font-weight: bolder;
+    margin-left: 0.29rem;
+}
+
+
+.subFont{
+  font-family: 'Roboto';
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-top: 0.5%;
+}
+
+.ddcard{
+  padding: 2rem;
+}
+
+.dropDownB{
+  margin-bottom: 0.5rem; 
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin:0.5%; 
+  width: 100%; 
+  text-align: left; 
+  background:#9cb3d8;
+  padding-left: 1rem;
+  background-color:#9abede;
+  border-color:#9abede;
+}
+
+.dropDownB:hover{
+  background:#9abede;
+  border-color:#9abede;
+
+}
+
+
+.dropDownB:focus{
+  background:#9abede;
+  border-color:#9abede;
+}
+
+
+.subHeadingLabels{
+  font-weight: bold;
+  color: #333333;
+}
+
+
+/* .dropDownB::after{
+  content: '\25be';
+  float: right;
+  transform: scale(2.5);
+}
+ */
+
+
+
+/* .dropDownB--active{
+  background: #9cb8e6;
+  
+} */
+
+
+/* .dropDownB--active::after{
+  content: '\25b4';
+} */
+
+.headButton{
+  margin-bottom: 1rem;
+  margin:1%;
+  width: 100%; 
+  text-align: left; 
+  font-weight:bold; 
+  background:#9cb8e6;
+}
+
+
+.docDetails{
+
+  /* width: 100%; 
+  text-align: left; 
+  margin-bottom: 1%;
+  background-color: #b8b8b8; */
+ 
+}
+
+
+.updownSymbol{
+
+  font-size: 1.5rem;
+  margin-top: 17%;
+
+}
+
+.updownSymbolContainer{
+ float: left;
+ padding-right: 0.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 35vh;
+}
+
+.left-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+.center-col {
+  flex: 1;
+  background: rgb(245, 243, 243);
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  width: 3rem;
+  height: 16rem;
+}
+
+.right-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7e7;
+}
+
+.buttonGrp{
+  width: 9rem;
+  height: 2rem;
+}
+
+
+
+.makeCeneter{
+
+  margin-left: 4rem;
+
+}
+
+
+.secondHeader{
+  border: 2px;
+  border-radius: 7px;
+  width: 100%;
+  background-color: #c0c0c0;
+  height: 2.3rem;
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #333333;
+  padding-left: 1rem;
+  font-weight: bolder;
+  padding-top: 0.4%;
+  
+}
+
+.alertIcon{
+
+  font-size: 1.5rem;
+  color: #357ebd;
+  padding-left: 5px;
+}
+
+
+.NotificationAdjust{
+  /* color: red;
+  background-color: red; */
+  margin-top: -1.2rem;
+}
+.NotificationAdjustlabel{
+  margin-left: -4%;
+}
+
+.NotificationAdjustlabel2{
+  margin-left: -6rem;
+}
+
+
+.pecentageMove{
+  margin-left: -20rem;
+}

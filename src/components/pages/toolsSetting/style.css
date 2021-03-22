@@ -1,0 +1,41 @@
+.ddcard{
+    padding: 2rem;
+  }
+  
+  .dropDownB{
+    margin-bottom: 1rem; 
+    margin:1%; 
+    width: 100%; 
+    text-align: left; 
+    background:#3299CC;
+  }
+  
+  .dropDownB::after{
+    content: '\25be';
+    float: right;
+    transform: scale(2.5);
+  }
+  
+  .dropDownB--active{
+    /* background: #555555; */
+  }
+  .dropDownB--active::after{
+    /* content: '\25b4'; */
+  }
+  
+  .headButton{
+    margin-bottom: 1rem;
+    margin:1%;
+    width: 100%; 
+    text-align: left; 
+    font-weight:bold; 
+    background:#3299CC;
+  }
+  
+  
+  .docDetails{
+  
+    width: 100%; 
+    text-align: left; 
+    margin-bottom: 1%;
+  }
