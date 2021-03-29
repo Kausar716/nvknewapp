@@ -26,7 +26,7 @@ console.log(IconAssets)
 			<div className="Container_dashboard">
 				<div className="box-1">
 				<img src={IconAssets["Cart Total"]} alt="no iamge" className="card_img" />
-					<h4>Order Quotes Management</h4>
+					<p className="heading_name">Order Quotes Management</p>
 					<ul className="list_style_data">
 						<li>75 Opens</li>
 						<li>50 Drafts</li>
@@ -39,7 +39,7 @@ console.log(IconAssets)
 				</div>
 				<div className="box-1">
 				<img src={IconAssets["Purchase-Orders"]} alt="no iamge" className="card_img" />
-					<h4>Purchase Orders</h4>
+				<p className="heading_name">Purchase Orders</p>
 					<ul className="list_style_data">
 						<li>75 Opens</li>
 						<li>50 Drafts</li>
@@ -49,7 +49,7 @@ console.log(IconAssets)
 				</div>
 				<div className="box-1">
 				<img src={IconAssets["Inventory-managemnet"]} alt="no iamge" className="card_img" />
-					<h4>Inventory Management</h4>
+				<p className="heading_name">Inventory Management</p>
 					<ul className="list_style_data">
 						<li>75 Opens</li>
 						<li>50 Drafts</li>
@@ -62,7 +62,7 @@ console.log(IconAssets)
 					
 					<div className="box-1">
 					<img src={IconAssets["Tools-and-settings"]} alt="no iamge" className="card_img" />
-						<h4>Tools & Settings</h4>
+					<p className="heading_name">Tools & Settings</p>
 						<ul className="list_style_data">
 						<li>75 Opens</li>
 						<li>50 Drafts</li>
@@ -72,7 +72,7 @@ console.log(IconAssets)
 					</div>
 					<div className="box-1">
 					<img src={IconAssets["Reports"]} alt="no iamge" className="card_img" />
-						<h4>Reports</h4>
+					<p className="heading_name">Reports</p>
 						{/* <p>text to show</p> */}
 					</div>
 					<div className="box-1">

@@ -23,16 +23,16 @@
 
    /* margin-top:50px; */
   }
-  .box-1 h4{
+  .box-1 .heading_name{
     position: absolute;
-   bottom: 40%;
+   bottom: 38%;
    text-align: center;
    width: 100%;
    z-index: 2;
    color:white;
    filter: opacity(1000%);
    font-weight:bold;
-   font-size:large;
+   font-size:23px;
 
   }
  
