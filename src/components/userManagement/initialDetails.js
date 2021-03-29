@@ -1,0 +1,68 @@
+
+const initialDetails = [
+    {
+      id: 1,
+      imgPath: "/images/img_avatar.png",
+      name: "Jane Doe",
+      designation: "Sales",
+      email: "janedoe@gmail.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "New Delhi, India",
+    },
+    {
+      id: 2,
+      imgPath: "/images/img_avatar.png",
+      name: "Mary Rosamund",
+      designation: "Sales",
+      email: "agra@rosie.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "Tbilisi, India",
+    },
+    {
+      id: 3,
+      imgPath: "/images/img_avatar.png",
+      name: "Mycroft Lestrade",
+      designation: "Marketing",
+      email: "britishgovt@gmail.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "London, India",
+    },
+    {
+      id: 4,
+      imgPath: "/images/img_avatar.png",
+      name: "John Holmes",
+      designation: "marketing",
+      email: "mary@johnlock.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "Baker Street, India",
+    },
+    {
+      id: 5,
+      imgPath: "/images/img_avatar.png",
+      name: "Arjun Lestrade",
+      designation: "Marketing",
+      email: "britishgovt@gmail.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "London, India",
+    },
+    {
+      id: 6,
+      imgPath: "/images/img_avatar.png",
+      name: "Ravan Lestrade",
+      designation: "Marketing",
+      email: "britishgovt@gmail.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "London, India",
+    },
+    {
+      id: 7,
+      imgPath: "/images/img_avatar.png",
+      name: "Karnan Lestrade",
+      designation: "Marketing",
+      email: "britishgovt@gmail.com",
+      phNumber: "(905)555-12345 xt. 1234",
+      address: "London, India",
+    },
+  ];
+  
+  export default initialDetails;

@@ -1,9 +1,9 @@
 import React from "react";
-import react from "react"
 
 import './userProfile.css';
 import { Button, FormGroup, Input ,Label,Dropdown,DropdownToggle,DropdownMenu,Row,Col, DropdownItem} from 'reactstrap';
-
+import CreateRole from '../modals/createRole'
+import DeleteRole from '../modals/deleteRole'
 
 export  default class UserAccess extends React.Component{
     constructor(props){
@@ -63,7 +63,13 @@ export  default class UserAccess extends React.Component{
             inventoryManagement:false,
             plantSetting:false,
             productSetting:false,
-            locationSetting:false,           
+            locationSetting:false, 
+            role:"" ,
+            createRoleToggle:false,
+            createRole:false,
+            selectedRole:"sales",
+            deleteRoleToggle:false,
+            deleteRole:false         
         }
     }
     handleCheckBox = (e) => {
@@ -212,6 +218,38 @@ export  default class UserAccess extends React.Component{
         )
     }
   
+    handleModelText=(e)=>{
+        this.setState({role:e.target.value})
+    }
+    handleUpdate = (e) => {
+        let createRoleToggle = ! this.state.createRoleToggle
+        this.setState({createRoleToggle})
+    }
+    handlecreateRoleModalResult = (e) => {
+        console.log(e.target.id)
+        let createRole
+        if(e.target.id=== "success"){
+            createRole=true
+        }
+        else{
+            createRole=false
+        }
+        this.setState({createRole,createRoleToggle:false})
+    }
+    handleDelete = () => {
+        this.setState({deleteRoleToggle:true})
+    }
+    handleDeleteRoleModalResult = (e) => {
+        console.log(e.target.id)
+        let deleteRole
+        if(e.target.id=== "success"){
+            deleteRole=true
+        }
+        else{
+            deleteRole=false
+        }
+        this.setState({deleteRole,deleteRoleToggle:false})
+    } 
         render(){
             console.log(this.state.supervisorRole)
             return(
@@ -257,7 +295,7 @@ export  default class UserAccess extends React.Component{
                             </select> 
                     </Col>
                     <Col xs="8">
-                    <Button className="deleteRole" style={{background:"transparent",color:"black"}}>
+                    <Button className="deleteRole" style={{background:"transparent",color:"black"}} onClick={this.handleDelete}>
                             Delete Role
                         </Button>
                     </Col>
@@ -421,8 +459,21 @@ export  default class UserAccess extends React.Component{
                 </Col>
             </Row>
                
-                
-               
+               {this.state.createRoleToggle?<CreateRole
+               modelToggle={this.state.createRoleToggle}
+               message1={"Create a new role with current  permission configuration."}
+               message2={"Role Name"} 
+              buttonLabel={"CREATE"}
+              createRoleModalResult={this.handlecreateRoleModalResult}
+
+                />:null} 
+                {this.state.deleteRoleToggle?<DeleteRole
+               modelToggle={this.state.deleteRoleToggle}
+               message1={`Are you sure you want to delete role ${this.state.selectedRole}?`}
+              buttonLabel={"REMOVE"}
+              deleteRoleModalResult={this.handleDeleteRoleModalResult}
+
+                />:null}              
                 
                 
             {/* </div> */}

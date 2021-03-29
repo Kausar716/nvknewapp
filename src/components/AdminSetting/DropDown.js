@@ -15,7 +15,7 @@ import AdjustmentReasons from './AdjustmentReasons';
 import {Provider} from 'react-redux';
 import store from '../../store';
 import Deliveries from './Deliveries';
-
+ 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);

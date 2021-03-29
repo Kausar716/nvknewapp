@@ -33,7 +33,7 @@ class UserList extends Component{
                         <li key={id}><button className="remove-btn" onClick={this.onDeleteItem.bind(this,id)}>X</button>{names}</li>
 
                     ))}
-                </ul>
+                </ul> 
 
                 
             </div>

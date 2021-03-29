@@ -4,7 +4,7 @@
     flex-basis: 33%;
     margin:2px;
     height: 300px;
-    background-color: #c0e093;
+    background-color: #9db174;
     position: relative;
     text-align: center;
     /* z-index: -3; */
@@ -13,29 +13,47 @@
   }
   .card_img{
   position:absolute;
-   width:35%;
-   height:50%;
+   width:45%;
+   height:65%;
    z-index:1;
    top:20%;
    left:29%;
    right:10%;
+   filter: opacity(40%)
 
    /* margin-top:50px; */
   }
   .box-1 h4{
-    position:absolute;
-    z-index: 2;
-    top:40%;
-    left:29%;
-    text-align: center;
-    font-size: 30%;
+    position: absolute;
+   bottom: 40%;
+   text-align: center;
+   width: 100%;
+   z-index: 2;
+   color:white;
+   filter: opacity(1000%);
+   font-weight:bold;
+   font-size:large;
 
   }
+ 
   .box-1:hover{
-    background-color:#4c7a34;
+    background-color:#789440;
     transform: 10s;
     
     
+  }
+  .list_style_data{
+    position:absolute;
+    padding: 0;
+    margin: 0;
+    margin-top: 238px;
+
+  }
+  .list_style_data li{
+    padding-left: 5px;
+    margin: 0;
+    list-style-type: none;
+    color:white;
   }
   @media(min-width:768px){
     .Container_dashboard{

@@ -59,7 +59,7 @@ const CurencyRates = (props) => {
   return (
     <>
       <Button color="primary" onClick={toggle}  className="dropDownB dropDownB--active">
-      <Label className="subFont">Curency and Rates</Label>
+      <Label className="subFont">Currency and Rates</Label>
         <span className="updownSymbolContainer"> 
           {isOpen ? <BiIcons.BsCaretUpFill className="updownSymbol" /> : <BiIcons.BsCaretDownFill className="updownSymbol" /> } 
         </span>

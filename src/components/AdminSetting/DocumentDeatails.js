@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import Avatar from './Avatar.js';
 import input1 from './input'
-import { red } from '@material-ui/core/colors';
 import * as BiIcons from "react-icons/bs";
 // const  { DOM: { input, select, textarea } } = React
 
@@ -66,7 +65,7 @@ export const phoneNumber = value =>
     const renderField = ({ input, label, type, meta: { touched, error, warning } }) => (
         <div>
           
-          <div style={{color:red}}>
+          <div style={{color:"red"}}>
             <input style={{width:"100%"}}{...input}  placeholder={label}  type={type}/>
             <Row >
             {touched && ((error && <span style={{color:"red"}}>{error}</span>) || (warning && <span>{warning}</span>))}

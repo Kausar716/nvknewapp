@@ -1,5 +1,5 @@
 .profileHeader{
-    background-color: #1167b1;
+    background-color: #357ebd;
     border-radius: 8px;
     max-height: 30%;
     color: white;
@@ -13,7 +13,7 @@
 }
 .requiredField{
     /* align-items: center; */
-    margin-left: 40%;
+    margin-left: 30%;
 }
 .errorSpan{
     color: red;
@@ -28,14 +28,19 @@
 }
 .divTitle{
     background-color: lightgray;
+    padding: 1%;
 }
 .listing{
     max-width: 80%;
-    height: 50%;
+    height: 90%;
     border: 2px solid lightgray;
     overflow-y: scroll;
     overflow-x: hidden;
     border-radius: "20px";
+}
+.activeLabel{
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 .QuotesPermissionDiv{
     max-width: 90%;
@@ -137,7 +142,7 @@ background-color: blue;
   }
 
   .boldTitle{
-      font-weight: 500;
+      font-weight: 700;
   }
  .subCheckBox{
      margin-left: 10%;
@@ -173,20 +178,48 @@ background-color: blue;
  .updateButton:hover{
      background-color: #1167b1;
  }
-  .settingButton{
-    background: #1167b1;
+.settingButtons{
+    background: #ffff;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 5px;
+    border-color: lightgray;
+    border-width: 3px;
+    margin-top: 20%;
 }
-@media(min-width:768px){
-    .fieldHeaderSize{
-        font-size: 130%;
-      
-    }
- 
+.settingButtons:hover{
+    background: #357ebd;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-color: #357ebd; 
 }
+
 .nestedCheckBox{
     margin-left: 20%;
+}
+.notificationInput{
+width: 10%;
+}
+.required{
+    color: red;
+}
+.selectDropdown{
+    /* appearance: none; */
+    display: flex;
+    height: 3em;
+    width: 100%;
+    overflow:hidden;
+    border-radius: .25em;
+}
+.imageUploadborder{
+    /* border:gray; */
+    width:100%;
+    height: 40%;
+    border-style: groove;
+    border-radius: 1em;
+    margin-left: 1%;
+    
 }

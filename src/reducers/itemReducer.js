@@ -23,7 +23,7 @@ export default function(state = initialSatate, action){
         case GET_ITEMS:
             return{
                 ...state
-            }
+            } 
             // case GET_ITEMS:
             //     return{
             //         ...state,

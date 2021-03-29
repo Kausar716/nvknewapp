@@ -15,7 +15,7 @@ class Navbar extends Component{
                 <div  className="navbar_div">
                     <a href="#" style={{float:"left"}}><img src={IconAssets["logo"]} alt="no iamge" id="logo"/></a>
                     <a href="#"  className="navbar_right"><i class="material-icons">view_headline</i></a>
-                    <a href="#" className="navbar_right"><img src={IconAssets["img_avatar"]} alt="no iamge" id="logo" style={{borderRadius:"50%"}}/><span style={{marginTop:-30}}>User Name</span></a>
+                    <a href="/UserManagement" className="navbar_right"><img src={IconAssets["img_avatar"]} alt="no iamge" id="logo" style={{borderRadius:"50%"}}/><span style={{marginTop:-30}}>User Name</span></a>
                     <a href="#"  className="navbar_right"><i class="material-icons">email</i></a>
                     <a href="#" className="navbar_right"><i class="material-icons">notifications</i></a>
                 </div>

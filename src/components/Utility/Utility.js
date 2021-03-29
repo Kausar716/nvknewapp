@@ -5,7 +5,6 @@ export function getAllImageAssets () {
     folderPathContext.keys().map((item, index) => {
     // console.log(item)
     let obj=folderPathContext(item);
-    console.log(obj.default)
     images[item.replace('./', '').split('.')[0]]=obj.default
     
     });

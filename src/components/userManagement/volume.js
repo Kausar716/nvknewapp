@@ -1,11 +1,16 @@
 import React from "react";
 
 import './userProfile.css';
+import './supplier.css';
 import { Button, FormGroup, Input ,Label,Dropdown,DropdownToggle,DropdownMenu,Row,Col, Card,CardHeader,Collapse} from 'reactstrap';
 import { node } from "prop-types";
+import {getAllImageAssets} from "../Utility/Utility";
+const IconAssets =  getAllImageAssets();
+console.log(IconAssets)
 
 
-export  default class UserSetting extends React.Component{
+
+export  default class SupplierSetting extends React.Component{
     constructor(props){
         super(props)
         this.state={
@@ -42,33 +47,32 @@ export  default class UserSetting extends React.Component{
             return(
                 <div>
                     <Card>
-                   <CardHeader  onClick={this.cardToggle} style={{background:"#357ebd",color:"white"}}>Question </CardHeader>
+                   <CardHeader  onClick={this.cardToggle} style={{background:"#357ebd",color:"white"}}>General plant information </CardHeader>
                     <Collapse isOpen = {this.state.cardToggle} className={"quizCollapse"}>                                       
                       <div>
-                      <p className="divTitle boldTitle" style={{padding:"2px"}}>Position for User Profile</p>
+                      <p className="divTitle boldTitle" style={{padding:"7px"}}>Hardiness Zones</p>
+                      <div style={{padding:"2%"}}>
                      <Row>
                          {/* <Col>
                             <img src=""/>
                          </Col> */}
                          <Col>
-                         <Label>
-                             Position Name
-                         </Label>
-                         <Input type="text" placeholder="Accounting"/>
-                         <Label onClick={this.handleNewPosition}>
-                             Add New Position
-                         </Label>
+                         <img src={IconAssets['img_avatar']} className="reasonsImg"/><br/>
+                         <Label>Hardness Zone</Label>
+                         <Input type="text"/><br/>
+                         <img src={IconAssets["Plus2"]} className="addImage"/> {'   '}
+                         <Label className="addText">Add new Zone</Label>
                          </Col>
-                         <Col>
-                         <p>Inactive</p>
-                         <div className="listingPosition" style={{borderRadius:"12px"}}>
-                                {/* <li className="listPositionClick" style={{listStyle:"none",padding:"10px"}}>
-                                Chef
-                                </li> */}
-                                <button onClick={this.handleListClick} id={"Chef"} className={this.state.selectedId=="Chef"?"buttonListClick":"buttonList"}>
-                                Chef
+                         <Col xs="3">
+                         <p className="addText">Inactive</p>
+                         <div className="inActiveListingPosition" style={{borderRadius:"12px"}}>
+                                <li style={{listStyle:"none",padding:"10px"}}>
+                            
+                                <button onClick={this.handleListClick} id={"Chef"} className="inActiveList">
+                                    Chef
                                 </button><br/>
-                                </div>
+                                </li>
+                        </div>
                      
                          </Col>
                          <Col xs="1">
@@ -78,13 +82,13 @@ export  default class UserSetting extends React.Component{
                          <button id="delete" className="settingButtons" onClick={this.handleButton}>Delete</button><br/>
                          <button id="edit" className="settingButtons" onClick={this.handleButton}>Edit</button>
                          </Col>
-                         <Col>
-                         <p>Active</p>
-                         <div className="listingPosition" style={{borderRadius:"12px"}}>
-                        <button onClick={this.handleListClick} id={"CSF"} className={this.state.selectedId=="CSF"?"buttonListClick":"buttonList"}>
+                         <Col xs="3">
+                         <p className="addText">Active (display alphanumeric Order)</p>
+                         <div className="inActiveListingPosition" style={{borderRadius:"12px"}}>
+                        <button onClick={this.handleListClick} id={"CSF"} className="inActiveList">
                          CSF
                         </button><br/>
-                        <button onClick={this.handleListClick} id={"aaaaa"} className={this.state.selectedId=="aaaaa"?"buttonListClick":"buttonList"}>
+                        <button onClick={this.handleListClick} id={"aaaaa"} className="inActiveList">
                          aaaaa
                         </button>
                           
@@ -96,14 +100,19 @@ export  default class UserSetting extends React.Component{
                      </Row>
                     
                       </div>
-                    <Row>
-                        <Col>
-                        <p style={{float:"right"}}>Please note saving is automatic</p>     
-                        </Col></Row>        
-                                     
+                      <div style={{marginTop:"6%"}}>
+                      <p style={{float:"right"}}>Please note saving is automatic{' '}</p>   
+                      </div>
+                         
+                
+                          
+              
+                        
+                       
+                         </div>            
                     </Collapse>
                     </Card>
-                    
+                  
                              
                               
                 </div>

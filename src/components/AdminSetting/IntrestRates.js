@@ -57,7 +57,7 @@ const InrestRates = (props) => {
   return (
     <>
       <Button color="primary" onClick={toggle}  className="dropDownB dropDownB--active">
-      <Label className="subFont">Intrest Rates</Label> 
+      <Label className="subFont">Interest Rates</Label> 
       <span className="updownSymbolContainer"> 
           {isOpen ? <BiIcons.BsCaretUpFill className="updownSymbol" /> : <BiIcons.BsCaretDownFill className="updownSymbol" /> } 
         </span>

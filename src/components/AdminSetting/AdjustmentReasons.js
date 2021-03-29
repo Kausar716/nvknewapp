@@ -6,7 +6,7 @@ import * as BiIcons from "react-icons/bs";
 import { Collapse, Button, CardBody, Card , Row, Col,Form, FormGroup, Input, Label} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import { blue } from '@material-ui/core/colors';
+// import { blue } from '@material-ui/core/colors';
 
 const onSubmit = (values) =>{
     console.log(values);
