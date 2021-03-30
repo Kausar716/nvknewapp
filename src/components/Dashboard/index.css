@@ -49,6 +49,14 @@
     margin-top: 238px;
 
   }
+  .reports_data{
+    float:left;
+  }
+  .reports_data p{
+    padding: 0;
+    margin: 0;
+
+  }
   .list_style_data li{
     padding-left: 5px;
     margin: 0;

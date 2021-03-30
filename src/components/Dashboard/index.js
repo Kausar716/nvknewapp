@@ -76,10 +76,15 @@ console.log(IconAssets)
 						{/* <p>text to show</p> */}
 					</div>
 					<div className="box-1">
+						<div className="reports_data">
 						<p>Order Assigned</p>
 						<p>5</p>
 						<p>Task Assigned</p>
+						<p>10</p>
 						<p>Request Assigned</p>
+						<p>15</p>
+						</div>
+					
 					</div>
 				</div>
 				
